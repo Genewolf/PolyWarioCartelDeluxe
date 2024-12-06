@@ -1,0 +1,97 @@
+body, html {
+    margin : 0;
+    padding: 0;
+    height: 230%;
+}
+
+.parkinsans-font {
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+  color: white;
+
+}
+
+.background-container {
+    height: 100%;
+    position: top;
+    background-image: url("../fond.webp");
+    background-position: top; /* Starts the image from the top */
+    background-attachment: scroll; /* Allows the background to scroll with the content */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-container * div{
+    padding: 1%;
+    margin: 2%;
+}
+
+div:has(h2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-column: 30% 40% 30%;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgba(113, 197, 37, 0.7);
+    border-radius: 5%;
+    margin-left: 20%;
+    margin-right: 20%
+}
+
+a {
+    color: white;
+    position: bottom;
+}
+
+.Brain {
+    display : grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+.Blood {
+    display : grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+.Lung {
+    display : grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+.Kidney {
+    display : grid;
+    grid-template-columns: 40% 20% 40%;
+}
+
+.Ocean {
+    text-align: justify;
+    background-color: rgba(27, 1, 143, 0.7);
+    border-radius: 5%;
+
+}
+
+.Human {
+    text-align: justify;
+    background-color: rgba(235, 131, 143, 0.7);
+    border-radius: 5%;
+
+}
+
+.Dangers {
+    text-align: justify;
+    background-color: rgba(230, 2, 41, 0.7);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 5%;
+
+}
+
+p {
+    padding-left: 3%;
+    padding-right: 3%;
+}
